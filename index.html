@@ -1,84 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US" dir="ltr">
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- ===============================================-->
+  <!--    Document Title-->
+  <!-- ===============================================-->
   <title>App Center Saint Honore</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- ===============================================-->
+  <!--    Favicons-->
+  <!-- ===============================================-->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+  <link rel="manifest" href="assets/img/favicons/manifest.json">
+  <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+  <meta name="theme-color" content="#ffffff">
 
-  <!-- Google Fonts -->
+  <!-- ===============================================-->
+  <!--    Stylesheets-->
+  <!-- ===============================================-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700&amp;family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&amp;display=swap"
     rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/theme.min.css" rel="stylesheet" />
+  <link href="assets/css/user.min.css" rel="stylesheet" />
 </head>
+<style>
+  .icon-img {
+    width: 90px;
+    border-radius: 50%;
+    height: 80px;
+    position: relative;
+    z-index: 2;
+    border: 6px solid #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-custom {
+    border: 1px solid rgb(189, 188, 188);
+    border-radius: 10%;
+    margin: 10px;
+    cursor: pointer;
+  }
+</style>
 
 <body>
-
-  <main id="main">
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Aplicaciones Web</h2>
-          <p>Nuestro listado de aplicaciones diseñadas para ayudarte darte la mejor productividad posible</p>
-        </div>
-        <a href="https://app.somossainthonore.com/dataanalyst/">
-          <div class="row gy-4">
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-              <div class="icon-box iconbox-blue">
-                <div class="icon">
-                  <img
-                    src="https://www.kindpng.com/picc/m/728-7280829_transparent-big-data-icon-png-analytics-data-icon.png"
-                    class="icon-img " alt="">
-                </div>
-                <h4><a href="">Data Analyst</a></h4>
-                <p>App para analizar las validaciones de ventas y inventario entre SAP y CEGID</p>
-              </div>
-            </div>
+  <!-- ===============================================-->
+  <!--    Main Content-->
+  <!-- ===============================================-->
+  <main class="main" id="top">
+    <section id="customers">
+      <div class="container">
+        <h1 class="text-center display-5 fw-semi-bold" data-zanim-xs='{"delay":0.3}' data-zanim-trigger="scroll">
+          Aplicaciones Web</h1>
+        <p class="text-center fs-0 fs-md-1" data-zanim-xs='{"delay":0.5}' data-zanim-trigger="scroll"> Nuestro listado
+          de aplicaciones diseñadas para ayudarte darte la mejor productividad posible<br></p>
+        <div class="row mb-4 mt-6 d-flex justify-content-center">
+          <div class="col-md-6 col-lg-3 text-center mt-2 card-custom"
+            onclick="javascript:window.open('https://sainthonore.axonify.com/training/auth.html', '_blank');"><img
+              src="https://axonify.com/wp-content/uploads/2018/05/axonify-general-social-2.png" alt="Dashboard"
+              class="icon-img" />
+            <h4 class="mt-3 lh-base">Axonify</h4>
           </div>
-        </a>
+          <div class="col-md-6 col-lg-3 text-center mt-2 card-custom"
+            onclick="javascript:window.open('https://sainthonore.sysaidit.com/Login.jsp?navLanguage=en-US', '_blank');">
+            <img src="https://www.nicepng.com/png/detail/242-2420123_help-desk-face-icons.png" alt="Dashboard"
+              class="icon-img" />
+            <h4 class="mt-3 lh-base">Mesa de ayuda</h4>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center mt-2 card-custom"
+            onclick="javascript:window.open('https://tmpsaihoo2.sap.topmanage.cloud/', '_blank');"><img
+              src="https://www.evolve-it.com.mx/wp-content/uploads/2013/02/SAP_Busi_One_PCG8_130_R_p.jpg" alt="Comment"
+              class="icon-img" />
+            <h4 class="mt-3 lh-base">SAP - TopManage</h4>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center mt-2 card-custom"
+            onclick="javascript:window.open('https://myhrhub.somossainthonore.com/SCGPayRollOne/', '_blank');"><img
+              src="https://www.myhrhub.co.uk/wp-content/uploads/2016/03/support-ring.png" alt="Tailored"
+              class="icon-img" />
+            <h4 class="mt-3 lh-base">MYHRHUB</h4>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center mt-2 card-custom"
+            onclick="javascript:window.open('https://somossainthonore.workplace.com/work/landing/input/', '_blank');">
+            <img
+              src="https://play-lh.googleusercontent.com/crhw3qZdsYTW6icdLk7ViDUW5nOn3PanHr5yIH14cEDcfs-aBDa2DKJcWUirl8MbOw"
+              alt="Dashboard" class="icon-img" />
+            <h4 class="mt-3 lh-base">Workplace</h4>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center mt-2 card-custom"
+            onclick="javascript:window.open('https://www.office.com/', '_blank');"><img
+              src="https://www.nininaphone.com/wp-content/uploads/2017/01/office365-icon.png" alt="Dashboard"
+              class="icon-img" />
+            <h4 class="mt-3 lh-base">Office 365</h4>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center mt-2 card-custom"
+            onclick="javascript:window.open('https://app.somossainthonore.com/dataanalyst/', '_blank');"><img
+              src="https://www.kindpng.com/picc/m/728-7280829_transparent-big-data-icon-png-analytics-data-icon.png"
+              alt="Dashboard" class="icon-img" />
+            <h4 class="mt-3 lh-base">Data Analyst</h4>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center mt-2 card-custom"
+            onclick="javascript:window.open('https://newoptimeyes.eyc.cl/cliente/saint_honore/default.aspx', '_blank');">
+            <img src="https://newoptimeyes.eyc.cl/cliente/saint_honore/images/lgInx.png" alt="Dashboard"
+              class="icon-img" />
+            <h4 class="mt-3 lh-base">OptimEyes</h4>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center mt-2 card-custom"
+            onclick="javascript:window.open('https://sainthonore.my.salesforce.com/?ec=302&startURL=%2Fhome%2Fhome.jsp', '_blank');">
+            <img src="https://sainthonore.my.salesforce.com/img/logo214.svg" alt="Dashboard" class="icon-img" />
+            <h4 class="mt-3 lh-base">Sales Force</h4>
+          </div>
+        </div>
 
-      </div>
-    </section><!-- End Services Section -->
+      </div><!-- end of .container-->
+    </section><!-- <section> close ============================-->
 
-  </main><!-- End #main -->
+  </main><!-- ===============================================-->
+  <!--    End of Main Content-->
+  <!-- ===============================================-->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-  <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <!-- ===============================================-->
+  <!--    JavaScripts-->
+  <!-- ===============================================-->
+  <script src="vendors/popper/popper.min.js"></script>
+  <script src="vendors/bootstrap/bootstrap.min.js"></script>
+  <script src="vendors/anchorjs/anchor.min.js"></script>
+  <script src="vendors/is/is.min.js"></script>
+  <script src="vendors/fontawesome/all.min.js"></script>
+  <script src="vendors/lodash/lodash.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+  <script src="vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+  <script src="vendors/gsap/customEase.js"></script>
+  <script src="vendors/gsap/scrollToPlugin.js"></script>
+  <!--script(src=`${CWD}vendors/gsap/drawSVGPlugin.js`)-->
+  <script src="assets/js/theme.js"></script>
 </body>
 
 </html>
