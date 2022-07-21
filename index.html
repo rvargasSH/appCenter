@@ -17,7 +17,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/faviconsh.ico">
   <link rel="manifest" href="assets/img/favicons/manifest.json">
   <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
   <meta name="theme-color" content="#ffffff">
@@ -44,9 +44,15 @@
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   }
 
+  .icon-img-two {
+    width: 80%;
+    height: 120px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+
   .card-custom {
-    border: 1px solid rgb(189, 188, 188);
-    border-radius: 10%;
     margin: 10px;
     cursor: pointer;
   }
@@ -57,6 +63,11 @@
   <!--    Main Content-->
   <!-- ===============================================-->
   <main class="main" id="top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" style="background-color: #DF8643;">
+      <div><a class="navbar-brand" style="margin-left:10%;" href="index.html"><img
+            src="assets/img/icons/saint-honore-logo-white.png" height="35" alt="logo" /></a>
+      </div>
+    </nav>
     <section id="customers">
       <div class="container">
         <h1 class="text-center display-5 fw-semi-bold" data-zanim-xs='{"delay":0.3}' data-zanim-trigger="scroll">
@@ -67,60 +78,75 @@
           <div class="col-md-6 col-lg-3 text-center mt-2 card-custom"
             onclick="javascript:window.open('https://sainthonore.axonify.com/training/auth.html', '_blank');"><img
               src="https://axonify.com/wp-content/uploads/2018/05/axonify-general-social-2.png" alt="Dashboard"
-              class="icon-img" />
+              class="icon-img-two" />
             <h4 class="mt-3 lh-base">Axonify</h4>
+            <p class="fs-0">Get your frontline ready for anything with mobile-first training and communications</p>
           </div>
           <div class="col-md-6 col-lg-3 text-center mt-2 card-custom"
             onclick="javascript:window.open('https://sainthonore.sysaidit.com/Login.jsp?navLanguage=en-US', '_blank');">
             <img src="https://www.nicepng.com/png/detail/242-2420123_help-desk-face-icons.png" alt="Dashboard"
-              class="icon-img" />
+              class="icon-img-two" />
             <h4 class="mt-3 lh-base">Mesa de ayuda</h4>
+            <p class="fs-0">Analiza y gestiona todos tus casos de soporte</p>
           </div>
           <div class="col-md-6 col-lg-3 text-center mt-2 card-custom"
             onclick="javascript:window.open('https://tmpsaihoo2.sap.topmanage.cloud/', '_blank');"><img
               src="https://www.evolve-it.com.mx/wp-content/uploads/2013/02/SAP_Busi_One_PCG8_130_R_p.jpg" alt="Comment"
-              class="icon-img" />
+              class="icon-img-two" />
             <h4 class="mt-3 lh-base">SAP - TopManage</h4>
+            <p class="fs-0">Gestiona toda la información de tu empresa aqui.</p>
           </div>
           <div class="col-md-6 col-lg-3 text-center mt-2 card-custom"
             onclick="javascript:window.open('https://myhrhub.somossainthonore.com/SCGPayRollOne/', '_blank');"><img
               src="https://www.myhrhub.co.uk/wp-content/uploads/2016/03/support-ring.png" alt="Tailored"
-              class="icon-img" />
+              class="icon-img-two" />
             <h4 class="mt-3 lh-base">MYHRHUB</h4>
+            <p class="fs-0">Mejora productividad en los procesos de cálculo y pago de nómina.</p>
           </div>
           <div class="col-md-6 col-lg-3 text-center mt-2 card-custom"
             onclick="javascript:window.open('https://somossainthonore.workplace.com/work/landing/input/', '_blank');">
             <img
               src="https://play-lh.googleusercontent.com/crhw3qZdsYTW6icdLk7ViDUW5nOn3PanHr5yIH14cEDcfs-aBDa2DKJcWUirl8MbOw"
-              alt="Dashboard" class="icon-img" />
+              alt="Dashboard" class="icon-img-two" />
             <h4 class="mt-3 lh-base">Workplace</h4>
+            <p class="fs-0">Herramientas ilimitadas para que trabajes con tu equipo estés donde estés.</p>
           </div>
           <div class="col-md-6 col-lg-3 text-center mt-2 card-custom"
             onclick="javascript:window.open('https://www.office.com/', '_blank');"><img
               src="https://www.nininaphone.com/wp-content/uploads/2017/01/office365-icon.png" alt="Dashboard"
-              class="icon-img" />
+              class="icon-img-two" />
             <h4 class="mt-3 lh-base">Office 365</h4>
+            <p class="fs-0">Toda una suite para mejorar tu productividad.</p>
           </div>
           <div class="col-md-6 col-lg-3 text-center mt-2 card-custom"
             onclick="javascript:window.open('https://app.somossainthonore.com/dataanalyst/', '_blank');"><img
-              src="https://www.kindpng.com/picc/m/728-7280829_transparent-big-data-icon-png-analytics-data-icon.png"
-              alt="Dashboard" class="icon-img" />
+              src="https://www.serviceplan.es/content/dam/serviceplan/serviceplan-es/Sales-force.jpeg" alt="Dashboard"
+              class="icon-img-two" />
             <h4 class="mt-3 lh-base">Data Analyst</h4>
+            <p class="fs-0">Valida el estado de ventas e inventario entre los diversos sistemas de la compañia</p>
           </div>
           <div class="col-md-6 col-lg-3 text-center mt-2 card-custom"
             onclick="javascript:window.open('https://newoptimeyes.eyc.cl/cliente/saint_honore/default.aspx', '_blank');">
             <img src="https://newoptimeyes.eyc.cl/cliente/saint_honore/images/lgInx.png" alt="Dashboard"
-              class="icon-img" />
+              class="icon-img-two" />
             <h4 class="mt-3 lh-base">OptimEyes</h4>
+            <p class="fs-0">Analisis de metas por ventas.</p>
           </div>
           <div class="col-md-6 col-lg-3 text-center mt-2 card-custom"
             onclick="javascript:window.open('https://sainthonore.my.salesforce.com/?ec=302&startURL=%2Fhome%2Fhome.jsp', '_blank');">
-            <img src="https://sainthonore.my.salesforce.com/img/logo214.svg" alt="Dashboard" class="icon-img" />
+            <img src="https://www.serviceplan.es/content/dam/serviceplan/serviceplan-es/Sales-force.jpeg"
+              alt="Dashboard" class="icon-img-two" />
             <h4 class="mt-3 lh-base">Sales Force</h4>
+            <p class="fs-0">Dedicarás Menos Tiempo a la Administración y Más a Impulsar tu Negocio</p>
           </div>
-        </div>
-
-      </div><!-- end of .container-->
+          <div class="col-md-6 col-lg-3 text-center mt-2 card-custom"
+            onclick="javascript:window.open('https://app.asana.com/-/login', '_blank');">
+            <img src="https://assets.asana.biz/m/5f083bc48e06e1e2/original/asana-logo-1200x1200.png" alt="Dashboard"
+              class="icon-img-two" />
+            <h4 class="mt-3 lh-base">Asana</h4>
+            <p class="fs-0">Software ideal para gestionar tareas y proyectos</p>
+          </div>
+        </div><!-- end of .container-->
     </section><!-- <section> close ============================-->
 
   </main><!-- ===============================================-->
