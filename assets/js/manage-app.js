@@ -1,4 +1,4 @@
-var apiUrl = "http://localhost:8091/";
+var apiUrl = "https://app.somossainthonore.com/apiappcenter/";
 getCategories();
 function getCategories() {
     document.getElementById("ulCategories").innerHTML = "";
@@ -39,8 +39,8 @@ function getCategories() {
 }
 
 function getInfoBySeach(search) {
-    document.getElementById("ulCategories").innerHTML = "";
-    document.getElementById("divTabContainer").innerHTML = "";
+    // document.getElementById("ulCategories").innerHTML = "";
+    // document.getElementById("divTabContainer").innerHTML = "";
     console.log("come");
     $.ajax({
         url: apiUrl + "apps/get/" + search,
@@ -51,6 +51,8 @@ function getInfoBySeach(search) {
         $('<li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#taball"><b>Resultados</b></a></li>').appendTo('#ulCategories');
         stringSecondDiv += '<div class="tab-pane container active" id="taball"><div class="row mb-4 mt-6 d-flex justify-content-center">';
         result.forEach(element => {
+            document.getElementById("ulCategories").innerHTML = "";
+            document.getElementById("divTabContainer").innerHTML = "";
             stringSecondDiv += '<div class="col-md-6 col-lg-3 text-center mt-2 card-custom"';
             stringSecondDiv += 'onclick="redirectToNewPage(' + element.appId + ')">';
             stringSecondDiv += '<img src="assets/img/icons/' + element.appIcon + '" alt="Dashboard" class="icon-img-two" />';
@@ -72,10 +74,8 @@ function redirectToNewPage(idApp) {
 }
 $("#searchByName").keyup(function () {
     if ($("#searchByName").val().length <= 0) {
-        console.log("get int");
         getCategories();
     } else {
-        console.log("get two");
         getInfoBySeach($("#searchByName").val());
 
     }
