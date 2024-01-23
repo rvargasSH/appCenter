@@ -1,4 +1,4 @@
-var apiUrl = "https://app.somossainthonore.com/apiappcenter/";
+var apiUrl = "http://localhost:8091/";
 getCategories();
 function getCategories() {
     document.getElementById("ulCategories").innerHTML = "";
@@ -39,9 +39,6 @@ function getCategories() {
 }
 
 function getInfoBySeach(search) {
-    // document.getElementById("ulCategories").innerHTML = "";
-    // document.getElementById("divTabContainer").innerHTML = "";
-    console.log("come");
     $.ajax({
         url: apiUrl + "apps/get/" + search,
         context: document.body
